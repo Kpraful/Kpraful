@@ -1,100 +1,76 @@
-# 👋 Hi, I'm Praful Katare
+# Praful Katare
 
-### **Full Stack Developer | Problem Solver | Innovator**
+**AI Software Engineer at BCG X** | GenAI and agentic systems, multi-tenant backend platforms
 
-Welcome to my GitHub profile! I'm a results-driven **Full Stack Developer** with **2.5+ years of experience** in designing and optimizing scalable APIs, enhancing system performance, and ensuring secure application architecture. I specialize in cutting-edge technologies like **Node.js, Python, C#, and Azure**, and I have a proven track record of delivering feature-rich solutions under tight deadlines.
+I build LLM systems that survive production: agent harnesses with real stopping criteria, RAG that cites its sources, and the multi-tenant Azure platforms underneath them. 4+ years total, the last of them shipping GenAI to 10+ enterprise tenants and 10,000+ users.
 
----
-
-## 🚀 **What I Do**
-- **Backend Development**: Building scalable and efficient APIs using **Node.js, Flask, and C#**.
-- **Frontend Development**: Creating user-friendly interfaces with **React, HTML, and CSS**.
-- **DevOps & Cloud**: Deploying and managing applications on **Azure, Docker, and Kubernetes**.
-- **Database Optimization**: Working with **MongoDB, Snowflake, and Azure Cosmos DB** to ensure efficient data storage and retrieval.
-- **Security**: Implementing secure authentication and secrets management with **JWT, HashiCorp Vault, and Azure Key Vault**.
+Based in Delhi NCR, India.
 
 ---
 
-## 🛠️ **Technologies & Tools**
-### **Languages**
-- Python, JavaScript, C++, C#, SQL
+## What I work on
 
-### **Frontend**
-- React, HTML, CSS (Tailwind, Bootstrap)
+**Agentic AI.** A 39-tool MCP server (FastMCP) that exposes internal tools and data to LLM agents over Claude and Gemini, with server-side tenant isolation resolved from the authenticated identity rather than caller input, a 403 invariant on every cross-tenant call, and guardrails that stop the model stating any number a tool did not return.
 
-### **Backend**
-- Node.js, Flask, Django, DotNet, Express
+**Retrieval that holds up.** Hybrid search fusing pgvector semantic retrieval with Postgres full-text via Reciprocal Rank Fusion, document-type weighting, multi-query expansion, page-level citations, and streaming answers under a 128K token budget.
 
-### **Databases**
-- MongoDB, Snowflake, Azure Cosmos DB
+**LLM-Ops.** Per-tenant multi-provider routing across OpenAI, Azure OpenAI and Gemini with time-to-first-token fallback that re-routes mid-stream, circuit breakers, inflight limits, 165+ versioned prompts hot-reloaded from blob storage through Redis, and every call traced in LangSmith and Datadog with token and cost accounting.
 
-### **DevOps & Cloud**
-- Docker, Kubernetes, Azure, Serverless
-
-### **Testing & Code Quality**
-- Pytest, Sonar, Snyk, Mocha, Chai
+**Backend and platform.** Per-tenant database isolation with encrypted connection strings and dynamically budgeted pools, Okta OIDC with group-to-tenant mapping, Terraform modules that stand up an isolated Azure subscription per client in about 30 minutes, and an event-driven document pipeline on Azure Queue Storage.
 
 ---
 
-## 🌟 **Featured Projects**
-Here are some of the projects I’m most proud of:
+## Selected results
 
-### **1. Full Stack Application for VM Management**
-- **Description**: Built a full-stack app (React + Flask) enabling teams to create and manage virtual machines (VMs) with SSH keys.
-- **Key Features**:
-  - Automated SSH setup using Bash scripts, reducing manual intervention by **40%**.
-  - Integrated HashiCorp Vault for secure secrets management.
-  - Optimized database performance with SQL integration.
-- **Technologies**: Flask, React, Bash, SQL, HashiCorp Vault, SSH.
-
-### **2. RESTful API Development with Node.js**
-- **Description**: Developed RESTful APIs for a user-centric website supporting thousands of daily users.
-- **Key Features**:
-  - Implemented JWT-based authentication, reducing login-related issues by **20%**.
-  - Engineered middleware for centralized error handling, improving debugging efficiency by **25%**.
-  - Designed a modular API architecture, reducing feature development time by **30%**.
-- **Technologies**: Node.js, Express.js, Mongoose, AWS S3, Chai.
-
-### **3. C# API & Speed Enhancement**
-- **Description**: Delivered a fully functional C# API within one week, accelerating client delivery by **30%**.
-- **Key Features**:
-  - Automated processes using a custom Timer Trigger app in Dot Net.
-  - Optimized database queries, reducing latency by **20%**.
-  - Resolved critical production bugs, minimizing downtime.
-- **Technologies**: C#, Dot Net, Azure Function App, Cosmos DB, Snowflake.
+| What | Impact |
+| --- | --- |
+| Multi-tenant Azure self-service platform | 10+ tenants, 10,000+ users, up to 5 clients per server |
+| Client onboarding automation | 7-10 days down to 1-2 hours; 6-month infra cost per client from $6,000 to $1,200-$2,000 |
+| Event-driven RAG and embedding pipeline | 50-100 documents per client, turnaround from weeks to hours |
+| LLM upload diagnostics agent | Catches ~90% of upload errors pre-processing, debugging from days to minutes, results under 90 seconds |
+| GenAI synthetic survey panel | Redesigned probabilistic aggregation, prediction error from 47pt to 10pt against real respondents |
+| Synthetic panel modeling core | Seeded k-means++ over 54-dimensional feature vectors, ~6,000 respondents compressed to ~250-300 prototypes, ~20x lower LLM cost per question |
+| Backend performance work (Infosys) | Query optimization and connection pooling, latency down up to 30% |
 
 ---
 
-## 🏆 **Achievements**
-- **Azure Certified**: AZ-900 and AZ-104 certified.
-- **Hackathon Finalist**: Finalist in **Smart India Hackathon 2020 (National Level)**.
-- **Coding Competitions**:
-  - **Bronze Medal** in Hacker-fest 2020 organized by HackerRank.
-  - **15th place** out of 130 participants in IEEE Xtreme Overflow Coding Competition.
-  - **1st place** in RJIT tech-fest code warfare contest.
-- **Scholarship**: Secured Codemithra scholarship among 10,000 students in Pune.
+## Tech I use in production
+
+**GenAI and LLM**
+LLM engineering, RAG, OpenAI API, structured outputs, Model Context Protocol (MCP), FastMCP, agentic tool-use, multi-agent orchestration, LangChain, LangGraph, prompt engineering, embeddings, pgvector, vector search, LLM evaluation and benchmarking
+
+**Backend and architecture**
+Python, FastAPI, Flask, Django, Node.js, REST API design, event-driven systems, multi-tenant architecture, microservices, observability
+
+**Cloud and DevOps**
+Microsoft Azure, AKS, Azure Container Apps, Azure Functions, Azure Queue Storage, Docker, Kubernetes, Helm, Terraform, GitHub Actions, CI/CD
+
+**Data**
+PostgreSQL, pgvector, MongoDB, Snowflake, SQL, pandas, NumPy, scikit-learn
+
+**Frontend**
+React 19, TypeScript, Vite, Redux Toolkit, TanStack Query, Chart.js
 
 ---
 
-## 📚 **Education**
-- **Bachelor of Engineering (Computer Science)**
-  - Bharati Vidyapeeth College of Engineering, Pune University
-  - **CGPA**: 8.63 (2018 – 2022)
+## Certifications and achievements
+
+- Microsoft Certified: **Azure Administrator Associate (AZ-104)** and **Azure Fundamentals (AZ-900)**
+- **National Finalist**, Smart India Hackathon 2020
+- Top **27%** on LeetCode, **300+** DSA problems solved
 
 ---
 
-## 📫 **Let's Connect!**
-I’m always open to collaborating on exciting projects or discussing new opportunities. Feel free to reach out!
+## Education
 
-- **Email**: prafulkatare6@gmail.com
-- **LinkedIn**: [linkedin.com/prafulkatare](https://linkedin.com/prafulkatare)
-- **GitHub**: [github.com/kpraful](https://github.com/kpraful)
+**B.E., Computer Engineering** | Bharati Vidyapeeth College of Engineering, Pune
+2018 to 2022, CGPA 8.63
 
 ---
 
-## 💡 **Fun Fact**
-When I’m not coding, I enjoy participating in hackathons and solving complex problems. I believe in the power of innovation and teamwork to create impactful solutions.
+## Connect
 
----
+- Email: prafulkatare6@gmail.com
+- LinkedIn: [in.linkedin.com/in/prafulkatare](https://in.linkedin.com/in/prafulkatare)
 
-⭐ **Thanks for visiting my GitHub profile!** ⭐
+Open to conversations about AI engineering, agent infrastructure, and backend platform work.
